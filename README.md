@@ -20,7 +20,7 @@
 - **Post:** Serve como o banco de dados para postagens, o modelo Post inclui campos para título, conteúdo, anexos e um ID de usuário para identificação. Isso permite que os usuários compartilhem conteúdo rico e relevante dentro da plataforma, enriquecendo a interação entre os membros.
 - **Preferences:** Armazena suas preferências de trabalho, como descrição, interesses e carga horária. Com o UserId como chave estrangeira, o modelo Preferences ajuda a vincular essas preferências aos perfis individuais dos usuários.
   
-Controladores (Controllers):
+### Controladores (Controllers):
 
 - **Login do Usuário:**
 *Cadastrar:* Registra novos usuários, coletando informações como nome, gênero, localização, senha e email, enquanto gera automaticamente um ID único para cada usuário, garantindo uma identificação exclusiva.
