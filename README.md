@@ -16,32 +16,32 @@
 
 ### Modelos (Models):
 
-- User: Armazena informações detalhadas dos usuários, como nome, gênero, localização e até mesmo as roupas desbloqueadas para o carangueijo. Este modelo proporciona uma base completa para o perfil do usuário, facilitando a personalização da experiência.
-- Post: Serve como o banco de dados para postagens, o modelo Post inclui campos para título, conteúdo, anexos e um ID de usuário para identificação. Isso permite que os usuários compartilhem conteúdo rico e relevante dentro da plataforma, enriquecendo a interação entre os membros.
-- Preferences: Armazena suas preferências de trabalho, como descrição, interesses e carga horária. Com o UserId como chave estrangeira, o modelo Preferences ajuda a vincular essas preferências aos perfis individuais dos usuários.
+- **User:** Armazena informações detalhadas dos usuários, como nome, gênero, localização e até mesmo as roupas desbloqueadas para o carangueijo. Este modelo proporciona uma base completa para o perfil do usuário, facilitando a personalização da experiência.
+- **Post:** Serve como o banco de dados para postagens, o modelo Post inclui campos para título, conteúdo, anexos e um ID de usuário para identificação. Isso permite que os usuários compartilhem conteúdo rico e relevante dentro da plataforma, enriquecendo a interação entre os membros.
+- **Preferences:** Armazena suas preferências de trabalho, como descrição, interesses e carga horária. Com o UserId como chave estrangeira, o modelo Preferences ajuda a vincular essas preferências aos perfis individuais dos usuários.
   
 Controladores (Controllers):
 
-- Login do Usuário:
-Cadastrar: Registra novos usuários, coletando informações como nome, gênero, localização, senha e email, enquanto gera automaticamente um ID único para cada usuário, garantindo uma identificação exclusiva.
-Verificar: Valida a autenticidade dos usuários através do email e senha fornecidos, retornando o ID do usuário e confirmando o sucesso do login, garantindo a segurança e acesso adequado à plataforma.
-Apresentar: Garante a privacidade, apresentando as informações do usuário, retornando todas as informações relevantes, exceto a senha, mantendo a confidencialidade dos dados dos usuários.
+- **Login do Usuário:**
+*Cadastrar:* Registra novos usuários, coletando informações como nome, gênero, localização, senha e email, enquanto gera automaticamente um ID único para cada usuário, garantindo uma identificação exclusiva.
+*Verificar:* Valida a autenticidade dos usuários através do email e senha fornecidos, retornando o ID do usuário e confirmando o sucesso do login, garantindo a segurança e acesso adequado à plataforma.
+*Apresentar:* Garante a privacidade, apresentando as informações do usuário, retornando todas as informações relevantes, exceto a senha, mantendo a confidencialidade dos dados dos usuários.
 
-- Publicações:
-Criar: Permite que os usuários criem novas postagens, fornecendo título, conteúdo, anexos e o ID do usuário como referência, enquanto gera automaticamente um ID único para cada postagem, facilitando a organização e recuperação de conteúdo.
-Apresentar: Utiliza o ID da postagem e recupera e exibe detalhes como título, conteúdo, anexos e o ID do usuário relacionado, permitindo que os usuários visualizem e interajam com o conteúdo compartilhado.
+- **Publicações:**
+*Criar:* Permite que os usuários criem novas postagens, fornecendo título, conteúdo, anexos e o ID do usuário como referência, enquanto gera automaticamente um ID único para cada postagem, facilitando a organização e recuperação de conteúdo.
+*Apresentar:* Utiliza o ID da postagem e recupera e exibe detalhes como título, conteúdo, anexos e o ID do usuário relacionado, permitindo que os usuários visualizem e interajam com o conteúdo compartilhado.
 
-- Perfis:
-Atualizar: Atualiza as informações de preferência com base nas entradas fornecidas pelo usuário, este controlador garante que as preferências dos voluntários sejam atualizadas de forma precisa e eficiente, refletindo suas escolhas e interesses atuais.
-Apresentar: Exibe as informações de preferência, este controlador fornece uma visão clara das preferências de trabalho dos voluntários, útil tanto para os próprios voluntários quanto para aqueles que procuram perfis de voluntários adequados para projetos específicos.
+- **Perfis:**
+*Atualizar:* Atualiza as informações de preferência com base nas entradas fornecidas pelo usuário, este controlador garante que as preferências dos voluntários sejam atualizadas de forma precisa e eficiente, refletindo suas escolhas e interesses atuais.
+*Apresentar:* Exibe as informações de preferência, este controlador fornece uma visão clara das preferências de trabalho dos voluntários, útil tanto para os próprios voluntários quanto para aqueles que procuram perfis de voluntários adequados para projetos específicos.
 
 ### Visões (Views):
 
-- Conta: Serve como o menu principal para os usuários, fornecendo acesso fácil às funcionalidades principais da plataforma. Se um usuário não estiver cadastrado, esta visão exibirá a tela de login, enquanto para usuários cadastrados, apresentará informações da conta conforme necessário, proporcionando uma experiência de usuário consistente e intuitiva.
+- **Conta:** Serve como o menu principal para os usuários, fornecendo acesso fácil às funcionalidades principais da plataforma. Se um usuário não estiver cadastrado, esta visão exibirá a tela de login, enquanto para usuários cadastrados, apresentará informações da conta conforme necessário, proporcionando uma experiência de usuário consistente e intuitiva.
 
-- Publicações: Permite aos usuários visualizar publicações dentro da plataforma, apresentando o conteúdo de forma clara e acessível, conforme fornecido pelo controlador de Publicações. Isso promove a interação e o engajamento dos usuários com o conteúdo compartilhado.
+- **Publicações:** Permite aos usuários visualizar publicações dentro da plataforma, apresentando o conteúdo de forma clara e acessível, conforme fornecido pelo controlador de Publicações. Isso promove a interação e o engajamento dos usuários com o conteúdo compartilhado.
   
-- Perfil: Oferece uma visualização personalizada das informações do usuário, incluindo suas preferências de trabalho, com a opção de alterar essas informações se o perfil visualizado pertencer ao próprio usuário logado. Isso permite uma gestão eficiente e personalizada do perfil do usuário, promovendo uma experiência de usuário ainda mais adaptada e satisfatória.
+- **Perfil:** Oferece uma visualização personalizada das informações do usuário, incluindo suas preferências de trabalho, com a opção de alterar essas informações se o perfil visualizado pertencer ao próprio usuário logado. Isso permite uma gestão eficiente e personalizada do perfil do usuário, promovendo uma experiência de usuário ainda mais adaptada e satisfatória.
 
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Assim, como exposto pela apresentação das três repartições da estruturação MVC, percebe-se como ele é extremamente útil no contexto de divisão e categorização de processos.
